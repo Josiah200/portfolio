@@ -1,5 +1,5 @@
 body {
-	background-color: grey;
+	background-color: black !important;
 
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -8,28 +8,77 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-.header {
-	height: 400px;
-	position: relative;
-}
-article {
+
+.project-readme {
 	background-color: black;
+	color: white;
+	max-height:50rem;
+	overflow: scroll;
+	padding: 1rem;
+	border: 1px solid white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.project-description {
+	color: white;
 }
 
-
-line {
-	fill: black;
-	stroke: black;
-	stroke-width: 1px;
-	border-right: 100px solid black;
+.project-name {
+	color: white;
+	text-decoration: underline;
 }
 
-svg {
-	background-color: black;
-	fill: grey;
+.github-link {
+	display: inline-block;
+	margin-left: 1.5rem;
+	width: 45px;
+	height: 45px;
+}
+
+.github-image {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper {
+	/* width: 650px;
+	height: 500px; */
+	width : 32vw;
+	aspect-ratio: 13/16;
+
+	margin-top: 12rem;
+	border: 1px solid white;
+}
+
+.project-column {
+	margin-right: 1rem;
+}
+
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.project {
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+	.project {
+		flex-wrap: wrap;
+	}
+	.swiper {
+		margin-top: 2rem;
+		width: 80vw;
+		margin: 0 auto;
+	}
+	.project-column {
+		margin: 0 auto;
+	}
+	.carousel-column {
+		margin: 0 auto;
+	}
 }

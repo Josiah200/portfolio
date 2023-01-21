@@ -19,7 +19,7 @@ class MarkdownViewer extends React.Component {
 		}
 		if (this.props.readMe === 'PortfolioReadme')
 		{
-			readme = PortfolioReadme;
+			readme = 'https://raw.githubusercontent.com/Josiah200/portfolio/main/README.md?token=GHSAT0AAAAAAB5KOKMSV66LM5P6DONX427KY6KZK3Q';
 		}
 		fetch(readme).then(res => res.text()).then(text => this.setState({ markdown: text }));
 	}
