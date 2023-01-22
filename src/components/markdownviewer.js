@@ -1,7 +1,7 @@
 
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import PortfolioReadme from '../README.md';
+import PortfolioReadme from '../README2.md';
 import FakebookReadme from '../README.md';
 
 class MarkdownViewer extends React.Component {

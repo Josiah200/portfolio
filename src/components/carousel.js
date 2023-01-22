@@ -11,14 +11,14 @@ class Carousel extends React.Component {
 		const { images } = this.props;
 		return (
 			<Swiper
-				className="projectSwiper"
+				className={'projectSwiper ' + this.props.name + '-carousel' }
 				spaceBetween={50}
 				pagination={{
 					clickable: true,
 				}}
 				navigation={true}
 				autoplay={{
-					delay: 5000,
+					delay: 10000,
 					disableOnInteraction: false,
 				}}
 				modules={[Autoplay, Pagination, Navigation]}

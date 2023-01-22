@@ -8,6 +8,35 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+@font-face {
+	font-family: "Inter";
+	src: local("Inter"),url("../fonts/Inter-Regular.ttf") format(truetype);
+}
+
+.header {
+	height: 450px;
+	display: flex;
+	align-items: stretch;
+	width: 100%;
+	position: relative;
+
+}
+.header-svg {
+	position:absolute;
+	widtH:100%;
+}
+.header-svg path {
+	width: 100%;
+	height: 100%;
+}
+
+.info-box {
+	position: absolute;
+	left: 30%;
+	bottom: 40%;
+	z-index: 1;
+}
+
 
 .project-readme {
 	background-color: black;
@@ -16,15 +45,23 @@ body {
 	overflow: scroll;
 	padding: 1rem;
 	border: 1px solid white;
+	margin-top: 1rem;
 }
 
 .project-description {
 	color: white;
+	margin-top: .4rem;
+	display: inline-block !important;
 }
 
 .project-name {
 	color: white;
 	text-decoration: underline;
+	text-decoration-thickness: 2px;
+	text-decoration-color: grey;
+	font-family: Inter;
+	font-weight: 500;
+	text-underline-offset: 5px;
 }
 
 .github-link {
@@ -40,45 +77,128 @@ body {
 }
 
 .swiper {
-	/* width: 650px;
-	height: 500px; */
-	width : 32vw;
+	width : 100%;
 	aspect-ratio: 13/16;
+	margin-top: 16.5rem;
+	/* border: 1px solid white; */
+}
 
-	margin-top: 12rem;
-	border: 1px solid white;
+.swiper-slide > img {
+	/* display: flex;
+	justify-content: center;
+	align-items: center;
+	background-position: center; */
+	display: block;
+	width:100%;
 }
 
 .project-column {
 	margin-right: 1rem;
+	width: 50%;
+}
+.project-column > p{
+	display: inline;
+	color: white;
 }
 
-.swiper-slide img {
+.carousel-column {
+	width:50%;
+}
+
+.swiper-wrapper {
+	display: relative;
+}
+.swiper-slide {
 	display: block;
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
 }
 
 .project {
 	display: flex;
 	flex-direction: row;
 	padding-bottom: 3rem;
+	font-family: Inter;
 }
+
 
 @media (max-width: 768px) {
 	.project {
 		flex-wrap: wrap;
 	}
 	.swiper {
-		margin-top: 2rem;
+		margin-top: 2rem !important;
 		width: 80vw;
 		margin: 0 auto;
 	}
 	.project-column {
 		margin: 0 auto;
+		width: auto;
 	}
 	.carousel-column {
 		margin: 0 auto;
+		width:auto;
 	}
+}
+
+.swiper-pagination-bullet {
+	background-color: #50e3c2 !important;
+}
+
+.swiper-button-prev, .swiper-button-next {
+	display: none !important;
+}
+.Portfolio-carousel {
+	margin-top: 10.5rem;
+}
+
+.info-box > h1 {
+	font-weight: 600 !important;
+	font-size: 32px;
+}
+
+.info-box > * {
+	color: #50e3c2;
+	font-weight: 500;
+	font-style: normal;
+	font-family: Inter;
+}
+
+.tech {
+	font-size: .9rem;
+	margin: 0;
+	padding: 0;
+	margin-left:6px;
+	font-family: Inter;
+}
+
+.C\# {
+	color: #9578d1;
+}
+
+.Core {
+	color: #336eb0;
+}
+
+.SQLite {
+	color: #bc3424;
+}
+
+.JavaScript {
+	color: #f7dd3d;
+}
+.JQuery {
+	color: #d19463;
+}
+.Bootstrap {
+	color: #7629ef;
+}
+.HTML {
+	color: #cb5930;
+}
+.CSS {
+	color: #3f8bcd;
+}
+.React {
+	color: #83d6f8;
 }

@@ -3,19 +3,35 @@ import ReactDOM from 'react-dom/client';
 import './../styles/index.css';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import reportWebVitals from '../reportWebVitals';
-import Layout from '../components/layout';
 import Project from '../components/project'
-import MarkdownViewer from '../components/markdownviewer';
+import Header from '../components/header'
+import "../fonts/Inter-Regular.ttf"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 	<StrictMode>
+		<Header/>
+
     	<Project 
 			name={'Fakebook'}
 			githubLink={'https://github.com'}
-			description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'}
+			techs={[
+				'C#',
+				'ASP.NET Core',
+				'SQLite',
+				'JavaScript',
+				'JQuery',
+				'Bootstrap',
+				'CSS',
+				'HTML',
+			]}
+			description={'Fakebook is a fully functional Facebook clone. Built with ASP.NET Core, it allows users to post messages, send friend requests, and instant message other users. All of this is persisted in a SQLite database, managed with Entity Framework Core. The site is hosted on a Ubuntu VM with Nginx using Kestrel.'}
+			links = {
+				<>
+					<p> You can find the README below or on </p> <a href="#">Github</a><p>, and the live site at </p><a href="https://fakebook.josiahmatheson.com">https://fakebook.josiahmatheson.com</a><p>.</p>
+				</>}
 			images={[
-				'images/logo512.png',
+				'images/profile.png',
 				'images/logo512.png',
 			]}
 			readMe={'FakebookReadme'}
@@ -24,7 +40,14 @@ root.render(
 		<Project
 			name = {'Portfolio'}
 			githubLink = {'https://github.com'}
-			description = {'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'}
+			techs={[
+				'React',
+				'JavaScript',
+				'Bootstrap',
+				'CSS',
+				'HTML'
+			]}
+			description = {'The personal site that you are viewing. It is a single page React application. It uses Bootstrap for styling and react-markdown to render the README.md files from my GitHub repositories. The site is hosted on a Ubuntu VM with Nginx.'}
 			images = {[
 				'images/logo512.png',
 				'images/logo512.png',
