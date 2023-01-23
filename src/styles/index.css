@@ -19,7 +19,6 @@ body {
 	align-items: stretch;
 	width: 100%;
 	position: relative;
-
 }
 .header-svg {
 	position:absolute;
@@ -30,13 +29,74 @@ body {
 	height: 100%;
 }
 
+
 .info-box {
-	position: absolute;
+	/* position: absolute;
 	left: 30%;
+	bottom: 30%; */
+	width: 1000px;
+	height: 450;
+
+	left: 20%;
+	position: relative;
+	background: black;
+	/* clip-path: polygon(59% 43%, 78% 21%, 90% 65%, 100% 100%, 0 100%, 16% 67%, 36% 35%); */
+	clip-path: polygon(58% 48%, 69% 43%, 80% 72%, 100% 100%, 0 100%, 16% 67%, 36% 35%);
+}
+.info-box > * {
+	position: absolute;
+	left: 20%;
+}
+.info-box > h1 {
 	bottom: 40%;
-	z-index: 1;
+	left: 30%;
+	font-weight: 600 !important;
+	font-size: 32px;
 }
 
+.info-box > p {
+	bottom: 30%;
+	left: 30%;
+	display: inline-block;
+	overflow-x: wrap;
+	font-size: 14px;
+}
+
+.info-box > .github-link {
+	bottom: 20%;
+	left: 27%;
+}
+.contact {
+	color: white !important;
+	font-weight: 200 !important;
+	font-family: Inter !important;
+	text-decoration: underline !important;
+}
+.info-box > .contact-btn {
+	bottom: 22%;
+	left: 37%;
+}
+
+.info-box > .resume-btn {
+	bottom: 20%;
+	left: 40%;
+}
+
+.info-box> * {
+	color: white;
+	font-weight: 500;
+	font-style: normal;
+	font-family: Inter;
+}
+
+.profile-picture {
+	width: 150px;
+	height: 179px;
+	border-radius: 0%;
+	border: 2px solid white;
+	left: 55%;
+	top: 50%;
+}
 
 .project-readme {
 	background-color: black;
@@ -120,7 +180,14 @@ body {
 	padding-bottom: 3rem;
 	font-family: Inter;
 }
-
+@media (max-width: 640px) {
+	.profile-picture {
+		display: none;
+	}
+	.contact-btn {
+		left: 45% !important;
+	}
+}
 
 @media (max-width: 768px) {
 	.project {
@@ -148,20 +215,9 @@ body {
 .swiper-button-prev, .swiper-button-next {
 	display: none !important;
 }
+
 .Portfolio-carousel {
-	margin-top: 10.5rem;
-}
-
-.info-box > h1 {
-	font-weight: 600 !important;
-	font-size: 32px;
-}
-
-.info-box > * {
-	color: #50e3c2;
-	font-weight: 500;
-	font-style: normal;
-	font-family: Inter;
+	margin-top: 12rem;
 }
 
 .tech {

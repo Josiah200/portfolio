@@ -14,7 +14,7 @@ root.render(
 
     	<Project 
 			name={'Fakebook'}
-			githubLink={'https://github.com'}
+			githubLink={'https://github.com/Josiah200/Fakebook'}
 			techs={[
 				'C#',
 				'ASP.NET Core',
@@ -25,21 +25,22 @@ root.render(
 				'CSS',
 				'HTML',
 			]}
-			description={'Fakebook is a fully functional Facebook clone. Built with ASP.NET Core, it allows users to post messages, send friend requests, and instant message other users. All of this is persisted in a SQLite database, managed with Entity Framework Core. The site is hosted on a Ubuntu VM with Nginx using Kestrel.'}
+			description={'Fakebook is a fully functional Facebook clone built with ASP.NET Core. It allows users to post messages, send friend requests, and instantly message other users. All of this is persisted in a SQLite database, managed with Entity Framework Core. The site is hosted on a Ubuntu VM with Nginx using Kestrel.'}
 			links = {
 				<>
-					<p> You can find the README below or on </p> <a href="#">Github</a><p>, and the live site at </p><a href="https://fakebook.josiahmatheson.com">https://fakebook.josiahmatheson.com</a><p>.</p>
+					<p> You can find the README below or on </p> <a href="https://github.com/Josiah200/Fakebook">Github</a><p>, and the live site at </p><a href="https://fakebook.josiahmatheson.com">https://fakebook.josiahmatheson.com</a><p>.</p>
 				</>}
 			images={[
 				'images/profile.png',
-				'images/logo512.png',
+				'images/messenger.png',
+				'images/login.png',
 			]}
 			readMe={'FakebookReadme'}
  		/>
 		
 		<Project
 			name = {'Portfolio'}
-			githubLink = {'https://github.com'}
+			githubLink = {'https://github.com/Josiah200/portfolio'}
 			techs={[
 				'React',
 				'JavaScript',
@@ -49,10 +50,9 @@ root.render(
 			]}
 			description = {'The personal site that you are viewing. It is a single page React application. It uses Bootstrap for styling and react-markdown to render the README.md files from my GitHub repositories. The site is hosted on a Ubuntu VM with Nginx.'}
 			images = {[
-				'images/logo512.png',
-				'images/logo512.png',
+				'images/portfolioheader.png',
 			]}
-			readMe={'FakebookReadme'}
+			readMe={'PortfolioReadme'}
 		/>
 	</StrictMode>
 );

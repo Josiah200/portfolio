@@ -1,8 +1,8 @@
 
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import PortfolioReadme from '../README2.md';
-import FakebookReadme from '../README.md';
+import PortfolioReadme from '../readme/README.md';
+import FakebookReadme from '../readme/FakebookREADME.md';
 
 class MarkdownViewer extends React.Component {
 	constructor() {
@@ -19,7 +19,7 @@ class MarkdownViewer extends React.Component {
 		}
 		if (this.props.readMe === 'PortfolioReadme')
 		{
-			readme = 'https://raw.githubusercontent.com/Josiah200/portfolio/main/README.md?token=GHSAT0AAAAAAB5KOKMSV66LM5P6DONX427KY6KZK3Q';
+			readme = PortfolioReadme;
 		}
 		fetch(readme).then(res => res.text()).then(text => this.setState({ markdown: text }));
 	}

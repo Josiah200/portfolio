@@ -11,7 +11,11 @@ class Header extends React.Component {
 					<div className="info-box">
 						<h1>I'm Josiah.</h1>
 						<p>A self-taught dev.</p> 
-						<p>Here you'll find some of my work, and my contact info.</p>
+						<a href='https://github.com/Josiah200' className="github-link">
+							<img src='/images/github-mark-white.svg' className="github-image"></img>
+						</a>
+						<a href="mailto:JosiahMatheson1@gmail.com" className="contact-btn contact">Email</a>
+						<img src='/images/profilepicture.png' className="profile-picture"></img>
 					</div>
 				</div>
 			</>
